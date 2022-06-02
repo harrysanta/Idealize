@@ -1,0 +1,380 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.superior {  
+  background: #f3c618;
+  padding: 10px 0;
+  
+}
+
+
+.superior .logo {
+  color: #f3c618;
+  font-size: 38px;
+  font-weight: lighter;
+  font-family: Great Vibes;
+  letter-spacing: 4px;
+  margin-left: 180px;
+  background-color: #231f20;
+  padding: 29px 40px 46px;
+  position: absolute;
+  top: 0;
+
+}
+
+.sac {
+  color: #231f20;
+  display: flex;
+  align-self: center;
+  justify-content: end;
+  margin-right: 300px;
+  text-transform: uppercase;
+  font-family: Alumni Sans;
+  font-weight: 900;
+  font-size: 16pt;
+  letter-spacing: 0.1rem;
+}
+
+.meio {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  z-index: 2;
+  background: #231f20;
+  height: 50px;
+  
+
+}
+
+.meio, .nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.c1 {
+  margin-right: 250px;
+  font-size: 15pt;
+  text-transform: uppercase;
+  font-family: Alumni Sans;
+  font-weight: 900;
+  letter-spacing: 0.5pt;
+}
+
+.c1 .botao {
+  color: #ffffff;
+  padding: 13px 20px;
+}
+
+nav.logo2 {
+  align-items: center;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+/*.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+  width: 140px;
+  height: 132px;
+  text-align: center;
+  line-height: 115px;
+}
+  .nav-list li {
+    padding: 30px 30px;
+    margin-right: 5px;
+}
+*/
+
+.botao:hover {
+  
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition-duration: 0.2s;
+ 
+  
+}
+
+.linhadelogin {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.linhadelogin img{
+  filter: invert(2);
+
+}
+
+.linhadelogin:hover img {
+  filter: none;
+}
+
+
+.inferior {
+  background: #f3c618;
+  color: #f3c618;
+}
+
+/*-------------------------------------------------------------------
+--------------------------------------------------------------------
+---------------------------------------------------------------------*/
+.mobile-menu {
+  align-content: center;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: rgb(0, 0, 0);
+  margin: 8px;
+  transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: absolute;
+    top: 15vh;
+    right: 0;
+    width: 50vw;
+    height: 85vh;
+    background: #f3c618;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
+.nav-list.active {
+  transform: translateX(0);
+}
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+.bannerPrincipal .slider,
+.bannerPrincipal .slides {
+  height: calc(100vh - 100px) !important;
+}
+.slider {
+  position: relative;
+  height: 400px;
+  width: 100%;
+}
+.slider .slides li {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: inherit;
+  overflow: hidden;
+  display: flex;
+}
+.bannerPrincipal .slider .slides li img {
+  background-position: bottom;
+}
+.slider .slides li img {
+  width: 100%;
+  background-position: center;
+  object-fit: cover;
+  margin-top: -221px;
+  
+}
+img {
+  border-style: none;
+}
+/*-------------------------------------------------------------------
+--------------------------------------------------------------------
+---------------------------------------------------------------------*/
+.sobre {
+  background-image: url(bg-sobre.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  height: 400px;
+ }
+
+.container {
+  margin: 0 20%;
+}
+
+.row {
+  font-family: 'Open Sans',sans-serif;
+  display: flex;
+  justify-content: center;
+  
+}
+.row .col {
+  float: left;
+  box-sizing: border-box;
+  min-height: 1px;
+}
+
+ .col.l2 {
+  width: 16.6666666667%;
+  margin-right: 1%;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.sobre h1 {
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  padding-top: 80px;
+  font-weight: 750;
+  line-height: 1.7rem;
+}
+
+.sobre p {
+  color: #fff;
+  font-size: .9rem;
+  font-weight: 500;
+}
+.sobre h1 b {
+  color: #f3c618;
+}
+
+
+.sobre .mid {
+  padding-top: 128px;
+  font-size: 14rem;
+  color: #fff;
+  text-align: center;
+  font-family: 'Bickham' , 'Times New Roman', Times, serif;
+  line-height: 10px;
+}
+.sobre a.btHistoria {
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: .7rem;
+  text-transform: uppercase;
+  border-radius: 20px;
+  transition: .3s;
+  text-align: center;
+  padding: 10px 20px;
+  display: block;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------*/
+
+.campanha {
+  background: rgb(43, 41, 41);
+  padding: 50px 50px;
+}
+
+.textoCampanha {
+  color: ivory;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.textoCampanha h1, h2 {
+ text-transform: uppercase;
+ font-family: Alumni Sans;
+}
+
+.textoCampanha h2 {
+  margin-top: 1.4%;
+  margin-bottom: 1%;
+}
+
+.textoCampanha h1 {
+  font-size: 30pt;
+}
+
+.textoCampanha p {
+  font-size: 15pt;
+  font-family: Archivo Narrow;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------*/
+
+.textoRodape {
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  color: #f3c618;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 0;
+}
+
+.containertr {
+  background: #231f20;
+}
+
+.textoRodape h3 {
+  font-family: Great Vibes;
+  margin: 0;
+  letter-spacing: 2pt;
+  font-size: 20pt;
+}
+
+.fita{
+  background: #f3c618;
+  width: 100%;
+  height: 20px;
+}
+
+.ajuste {
+  height: 27px;
+}
